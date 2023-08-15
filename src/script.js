@@ -53,32 +53,40 @@ aB.onclick = () => {
   fst.style.display = 'block';
 };
 addB.onclick = (event) => {
-  event.preventDefault()
-  if (Number(input.value) === ans) {
-    streakArr.push(true);
-    streak = streakArr.length;
-    streakTxt.innerText = 'Streak: ' + streak;
-    input.value = '';
-    state.innerText = 'correct'
-    state.style.color = 'lime';
-    state.style.opacity = '1';
-    setTimeout(() => {
-      state.style.opacity = '0';
-    }, 2000);
-    addf();
-  } else {
-    streakArr.length = 0;
-    streak = streakArr.length;
-    streakTxt.innerText = 'Streak: ' + streak;
-    state.innerText = 'incorrect'
+  event.preventDefault();
+  if (input.value === '') {
+    state.innerText = 'Enter a number';
     state.style.color = 'red';
     state.style.opacity = '1';
     setTimeout(() => {
       state.style.opacity = '0';
-      
     }, 2000);
-    input.value = '';
-    addf();
+  } else {
+    if (Number(input.value) === ans) {
+      streakArr.push(true);
+      streak = streakArr.length;
+      streakTxt.innerText = 'Streak: ' + streak;
+      input.value = '';
+      state.innerText = 'correct';
+      state.style.color = 'lime';
+      state.style.opacity = '1';
+      setTimeout(() => {
+        state.style.opacity = '0';
+      }, 2000);
+      addf();
+    } else {
+      streakArr.length = 0;
+      streak = streakArr.length;
+      streakTxt.innerText = 'Streak: ' + streak;
+      state.innerText = 'incorrect';
+      state.style.color = 'red';
+      state.style.opacity = '1';
+      setTimeout(() => {
+        state.style.opacity = '0';
+      }, 2000);
+      input.value = '';
+      addf();
+    }
   }
 };
 
@@ -102,31 +110,40 @@ sB.onclick = () => {
 };
 
 subB.onclick = (event) => {
-  event.preventDefault()
-  if (Number(input.value) === ans) {
-    streakArr.push(true);
-    streak = streakArr.length;
-    streakTxt.innerText = 'Streak: ' + streak;
-    input.value = '';
-    state.innerText = 'correct'
-    state.style.color = 'lime';
-    state.style.opacity = '1';
-    setTimeout(() => {
-      state.style.opacity = '0';
-    }, 2000);
-    subf();
-  } else {
-    streakArr.length = 0;
-    streak = streakArr.length;
-    streakTxt.innerText = 'Streak: ' + streak;
-    state.innerText = 'incorrect'
+  event.preventDefault();
+  if (input.value === '') {
+    state.innerText = 'Enter a number';
     state.style.color = 'red';
     state.style.opacity = '1';
     setTimeout(() => {
       state.style.opacity = '0';
     }, 2000);
-    input.value = '';
-    subf();
+  } else {
+    if (Number(input.value) === ans) {
+      streakArr.push(true);
+      streak = streakArr.length;
+      streakTxt.innerText = 'Streak: ' + streak;
+      input.value = '';
+      state.innerText = 'correct';
+      state.style.color = 'lime';
+      state.style.opacity = '1';
+      setTimeout(() => {
+        state.style.opacity = '0';
+      }, 2000);
+      subf();
+    } else {
+      streakArr.length = 0;
+      streak = streakArr.length;
+      streakTxt.innerText = 'Streak: ' + streak;
+      state.innerText = 'incorrect';
+      state.style.color = 'red';
+      state.style.opacity = '1';
+      setTimeout(() => {
+        state.style.opacity = '0';
+      }, 2000);
+      input.value = '';
+      subf();
+    }
   }
 };
 
@@ -150,30 +167,39 @@ mB.onclick = () => {
 };
 
 mulB.onclick = (event) => {
-  event.preventDefault()
-  if (Number(input.value) === ans) {
-    streakArr.push(true);
-    streak = streakArr.length;
-    streakTxt.innerText = 'Streak: ' + streak;
-    input.value = '';
-    state.innerText = 'correct'
-    state.style.color = 'lime';
-    state.style.opacity = '1';
-    setTimeout(() => {
-      state.style.opacity = '0';
-    }, 2000);
-    mulf();
-  } else {
-    streakArr.length = 0;
-    streak = streakArr.length;
-    streakTxt.innerText = 'Streak: ' + streak;
-    state.innerText = 'incorrect'
+  event.preventDefault();
+  if (input.value === '') {
+    state.innerText = 'Enter a number';
     state.style.color = 'red';
     state.style.opacity = '1';
     setTimeout(() => {
       state.style.opacity = '0';
     }, 2000);
-    input.value = '';
-    mulf();
+  } else {
+    if (Number(input.value) === ans) {
+      streakArr.push(true);
+      streak = streakArr.length;
+      streakTxt.innerText = 'Streak: ' + streak;
+      input.value = '';
+      state.innerText = 'correct';
+      state.style.color = 'lime';
+      state.style.opacity = '1';
+      setTimeout(() => {
+        state.style.opacity = '0';
+      }, 2000);
+      mulf();
+    } else {
+      streakArr.length = 0;
+      streak = streakArr.length;
+      streakTxt.innerText = 'Streak: ' + streak;
+      state.innerText = 'incorrect';
+      state.style.color = 'red';
+      state.style.opacity = '1';
+      setTimeout(() => {
+        state.style.opacity = '0';
+      }, 2000);
+      input.value = '';
+      mulf();
+    }
   }
 };
